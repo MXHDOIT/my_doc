@@ -1,0 +1,27 @@
+BeanFactory
+ApplicationContext
+
+org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.singletonObjects
+org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.earlySingletonObjects
+org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.singletonFactories
+
+org.springframework.context.support.AbstractApplicationContext.refresh
+- org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory
+-- org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(org.springframework.beans.factory.support.DefaultListableBeanFactory)
+--- org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions
+---- org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseDefaultElement
+- org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors
+- org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors
+-- org.springframework.beans.factory.ListableBeanFactory.getBeanNamesForType(java.lang.Class<?>, boolean, boolean)
+- org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization
+-- org.springframework.beans.factory.config.ConfigurableListableBeanFactory.preInstantiateSingletons
+--- org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean
+---- org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean
+----- org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance
+----- org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean
+------ org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues
+------- org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getEarlyBeanReference
+----- org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(java.lang.String, java.lang.Object, org.springframework.beans.factory.support.RootBeanDefinition)
+------ org.springframework.beans.factory.config.BeanPostProcessor.postProcessBeforeInitialization
+------ org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods
+------ org.springframework.beans.factory.config.BeanPostProcessor.postProcessAfterInitialization
