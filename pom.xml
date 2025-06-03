@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-ioc</module>
+        <module>zk</module>
     </modules>
 
     <properties>
