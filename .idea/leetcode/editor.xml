@@ -14,6 +14,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[1287]有序数组中出现次数超过25%的元素.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/doc/content/[1287]有序数组中出现次数超过25%的元素.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1287" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[1287]有序数组中出现次数超过25%的元素.java" />
+              <option name="titleSlug" value="element-appearing-more-than-25-in-sorted-array" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[1298]你能从盒子里获得的最大糖果数.java">
           <value>
             <LeetcodeEditor>
@@ -77,6 +88,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[215]数组中的第K个最大元素.java" />
               <option name="titleSlug" value="kth-largest-element-in-an-array" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[25]K 个一组翻转链表.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/doc/content/[25]K 个一组翻转链表.md" />
+              <option name="frontendQuestionId" value="leetcode.cn25" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[25]K 个一组翻转链表.java" />
+              <option name="titleSlug" value="reverse-nodes-in-k-group" />
             </LeetcodeEditor>
           </value>
         </entry>
