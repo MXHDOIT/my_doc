@@ -6,8 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-ioc" />
+        <module name="daily-practice" />
+        <module name="task-dispatcher" />
         <module name="zk" />
+        <module name="spring-ioc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

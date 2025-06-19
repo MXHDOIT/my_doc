@@ -11,6 +11,8 @@
     <modules>
         <module>spring-ioc</module>
         <module>zk</module>
+        <module>daily-practice</module>
+        <module>task-dispatcher</module>
     </modules>
 
     <properties>
