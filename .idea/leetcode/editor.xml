@@ -146,6 +146,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[1695]删除子数组的最大得分.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/doc/content/[1695]删除子数组的最大得分.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1695" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[1695]删除子数组的最大得分.java" />
+              <option name="titleSlug" value="maximum-erasure-value" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[1957]删除字符使字符串变好.java">
           <value>
             <LeetcodeEditor>
