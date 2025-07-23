@@ -157,6 +157,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[1717]删除子字符串的最大得分.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/doc/content/[1717]删除子字符串的最大得分.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1717" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[1717]删除子字符串的最大得分.java" />
+              <option name="titleSlug" value="maximum-score-from-removing-substrings" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[1957]删除字符使字符串变好.java">
           <value>
             <LeetcodeEditor>
