@@ -2,9 +2,11 @@ package com.frank;
 
 import javafx.util.Pair;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
+import java.util.Objects;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -65,9 +67,18 @@ public class IncrementalMerge {
             // 立即从相应集合中移除
             // 从相应集合中移除
             if (type == 1) {
+                Set<Long> campaignIds = ids.stream().map(customerToCampaigns::get)
+                        .filter(Objects::nonNull).flatMap(Collection::stream).collect(Collectors.toSet());
+                Set<Long> creativeIds = campaignIds.stream().map(campaignToCreatives::get)
+                        .filter(Objects::nonNull).flatMap(Collection::stream).collect(Collectors.toSet());
                 customerToCampaigns.keySet().removeAll(ids); // 移除账户
+                campaignToCreatives.keySet().removeAll(campaignIds); // 移除计划
+                activeCreativeIds.removeAll(creativeIds); // 移除创意
             } else if (type == 2) {
+                Set<Long> creativeIds = ids.stream().map(campaignToCreatives::get)
+                        .filter(Objects::nonNull).flatMap(Collection::stream).collect(Collectors.toSet());
                 campaignToCreatives.keySet().removeAll(ids); // 移除计划
+                activeCreativeIds.removeAll(creativeIds); // 移除创意
             } else if (type == 3) {
                 activeCreativeIds.removeAll(ids); // 移除创意
             }
@@ -96,27 +107,20 @@ public class IncrementalMerge {
             // 从相应集合中移除并收集被移除的创意ID
             if (type == 1) {
                 // 移除账户时，需要找到这些账户关联的所有创意
-                ids.forEach(customerId -> {
-                    Set<Long> campaigns = customerToCampaigns.get(customerId);
-                    if (campaigns != null) {
-                        campaigns.forEach(campaignId -> {
-                            Set<Long> creatives = campaignToCreatives.get(campaignId);
-                            if (creatives != null) {
-                                removedCreativeIds.addAll(creatives);
-                            }
-                        });
-                    }
-                });
-                customerToCampaigns.keySet().removeAll(ids);
+                Set<Long> campaignIds = ids.stream().map(customerToCampaigns::get)
+                        .filter(Objects::nonNull).flatMap(Collection::stream).collect(Collectors.toSet());
+                Set<Long> creativeIds = campaignIds.stream().map(campaignToCreatives::get)
+                        .filter(Objects::nonNull).flatMap(Collection::stream).collect(Collectors.toSet());
+                customerToCampaigns.keySet().removeAll(ids); // 移除账户
+                campaignToCreatives.keySet().removeAll(campaignIds); // 移除计划
+                activeCreativeIds.removeAll(creativeIds); // 移除创意
+                removedCreativeIds.addAll(creativeIds);
             } else if (type == 2) {
-                // 移除计划时，直接收集这些计划的创意
-                ids.forEach(campaignId -> {
-                    Set<Long> creatives = campaignToCreatives.get(campaignId);
-                    if (creatives != null) {
-                        removedCreativeIds.addAll(creatives);
-                    }
-                });
-                campaignToCreatives.keySet().removeAll(ids);
+                Set<Long> creativeIds = ids.stream().map(campaignToCreatives::get)
+                        .filter(Objects::nonNull).flatMap(Collection::stream).collect(Collectors.toSet());
+                campaignToCreatives.keySet().removeAll(ids); // 移除计划
+                activeCreativeIds.removeAll(creativeIds); // 移除创意
+                removedCreativeIds.addAll(creativeIds);
             } else if (type == 3) {
                 // 直接移除创意
                 removedCreativeIds.addAll(ids);
