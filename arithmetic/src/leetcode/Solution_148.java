@@ -1,3 +1,5 @@
+package leetcode;
+
 import leetcode.model.ListNode;
 
 /**
