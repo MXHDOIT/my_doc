@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * 数组不是单调的话，不要用滑动窗口，考虑用前缀和.
+ *
  * @author: maxinhang.
  */
 public class Solution_560 {
