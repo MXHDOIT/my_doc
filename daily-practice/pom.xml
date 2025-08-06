@@ -30,5 +30,11 @@
             <artifactId>hutool-all</artifactId>
             <version>5.8.24</version>
         </dependency>
+        <!-- Netty核心依赖 -->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>4.1.94.Final</version>
+        </dependency>
     </dependencies>
 </project>
