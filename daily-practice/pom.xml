@@ -36,5 +36,11 @@
             <artifactId>netty-all</artifactId>
             <version>4.1.94.Final</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.zookeeper</groupId>
+            <artifactId>zookeeper</artifactId>
+            <version>3.4.10</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 </project>
