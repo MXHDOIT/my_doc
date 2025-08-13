@@ -1,9 +1,32 @@
 package leetcode;
 
+import java.util.Stack;
+
 /**
  * @author: maxinhang.
  */
 public class Solution_42 {
+
+    public int trapStack(int[] height) {
+        int n = height.length;
+        int result = 0;
+        Stack<Integer> stack = new Stack<>();
+        for (int i = 0; i < n; i++) {
+            int cHeight = height[i];
+            while (!stack.isEmpty() && cHeight > height[stack.peek()]) {
+                Integer index = stack.pop();
+                if (stack.isEmpty()) {
+                    break;
+                }
+                int dh = Math.min(height[stack.peek()], cHeight) - height[index];
+                result += dh * (i - stack.peek() - 1);
+            }
+            stack.push(i);
+        }
+
+        return result;
+    }
+
     public int trap(int[] height) {
         int n = height.length;
         int[] maxLeft = new int[n];
