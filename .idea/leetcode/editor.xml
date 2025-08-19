@@ -377,6 +377,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[2348]全 0 子数组的数目.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/doc/content/[2348]全 0 子数组的数目.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2348" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[2348]全 0 子数组的数目.java" />
+              <option name="titleSlug" value="number-of-zero-filled-subarrays" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[234]回文链表.java">
           <value>
             <LeetcodeEditor>
@@ -693,6 +704,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[5]最长回文子串.java" />
               <option name="titleSlug" value="longest-palindromic-substring" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[679]24 点游戏.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/doc/content/[679]24 点游戏.md" />
+              <option name="frontendQuestionId" value="leetcode.cn679" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[679]24 点游戏.java" />
+              <option name="titleSlug" value="24-game" />
             </LeetcodeEditor>
           </value>
         </entry>
