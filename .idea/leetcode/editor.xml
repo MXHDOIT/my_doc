@@ -58,6 +58,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[1277]统计全为 1 的正方形子矩阵.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/doc/content/[1277]统计全为 1 的正方形子矩阵.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1277" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[1277]统计全为 1 的正方形子矩阵.java" />
+              <option name="titleSlug" value="count-square-submatrices-with-all-ones" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[1287]有序数组中出现次数超过25%的元素.java">
           <value>
             <LeetcodeEditor>
