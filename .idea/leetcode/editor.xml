@@ -520,6 +520,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[3195]包含所有 1 的最小矩形面积 I.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/doc/content/[3195]包含所有 1 的最小矩形面积 I.md" />
+              <option name="frontendQuestionId" value="leetcode.cn3195" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[3195]包含所有 1 的最小矩形面积 I.java" />
+              <option name="titleSlug" value="find-the-minimum-area-to-cover-all-ones-i" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[3202]找出有效子序列的最大长度 II.java">
           <value>
             <LeetcodeEditor>
