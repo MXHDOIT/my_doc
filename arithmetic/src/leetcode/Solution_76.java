@@ -10,22 +10,26 @@ import java.util.Objects;
  * @author: maxinhang.
  */
 public class Solution_76 {
+
+    public static void main(String[] args) {
+        new Solution_76().minWindow("ADOBECODEBANC", "ABC");
+    }
+
     public String minWindow(String s, String t) {
         Map<Character, Integer> need = new HashMap<>();
-        Map<Character, Integer> window = new HashMap<>();
         for (char ch : t.toCharArray()) {
             need.merge(ch, 1, Integer::sum);
         }
-
-        int valid = 0;
+        Map<Character, Integer> window = new HashMap<>();
         int left = 0;
         int right = 0;
+        int valid = 0;
         int start = 0;
         int len = Integer.MAX_VALUE;
         while (right < s.length()) {
-            //入
             char ch = s.charAt(right);
             if (need.containsKey(ch)) {
+                //入
                 window.merge(ch, 1, Integer::sum);
                 if (Objects.equals(window.get(ch), need.get(ch))) {
                     valid++;
@@ -33,24 +37,21 @@ public class Solution_76 {
             }
             right++;
             //出
-            while (need.size() == valid) {
-                if (right - left <= len) {
+            while (valid == need.size()) {
+                if (right - left < len) {
                     start = left;
                     len = right - left;
                 }
-                char charAt = s.charAt(left);
+                char c = s.charAt(left);
                 left++;
-                if (window.containsKey(charAt)) {
-                    Integer size = window.get(charAt);
-                    size = size - 1;
-                    window.put(charAt, size);
-                    if (size < need.get(charAt)) {
+                if (window.containsKey(c)) {
+                    window.merge(c, -1, Integer::sum);
+                    if (window.get(c) < need.get(c)) {
                         valid--;
                     }
                 }
             }
         }
-
         return len == Integer.MAX_VALUE ? "" : s.substring(start, start + len);
     }
 }
