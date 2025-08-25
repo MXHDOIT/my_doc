@@ -201,6 +201,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[151]反转字符串中的单词.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/doc/content/[151]反转字符串中的单词.md" />
+              <option name="frontendQuestionId" value="leetcode.cn151" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[151]反转字符串中的单词.java" />
+              <option name="titleSlug" value="reverse-words-in-a-string" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[15]三数之和.java">
           <value>
             <LeetcodeEditor>
@@ -913,6 +924,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[LCR 024]反转链表.java" />
               <option name="titleSlug" value="UHnkqh" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[LCR 181]字符串中的单词反转.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/doc/content/[LCR 181]字符串中的单词反转.md" />
+              <option name="frontendQuestionId" value="leetcode.cnLCR 181" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[LCR 181]字符串中的单词反转.java" />
+              <option name="titleSlug" value="fan-zhuan-dan-ci-shun-xu-lcof" />
             </LeetcodeEditor>
           </value>
         </entry>
