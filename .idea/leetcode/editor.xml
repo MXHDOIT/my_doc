@@ -674,6 +674,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[3459]最长 V 形对角线段的长度.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/doc/content/[3459]最长 V 形对角线段的长度.md" />
+              <option name="frontendQuestionId" value="leetcode.cn3459" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[3459]最长 V 形对角线段的长度.java" />
+              <option name="titleSlug" value="length-of-longest-v-shaped-diagonal-segment" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[3487]删除后的最大子数组元素和.java">
           <value>
             <LeetcodeEditor>
@@ -748,6 +759,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[46]全排列.java" />
               <option name="titleSlug" value="permutations" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[470]用 Rand7() 实现 Rand10().java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/doc/content/[470]用 Rand7() 实现 Rand10().md" />
+              <option name="frontendQuestionId" value="leetcode.cn470" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[470]用 Rand7() 实现 Rand10().java" />
+              <option name="titleSlug" value="implement-rand10-using-rand7" />
             </LeetcodeEditor>
           </value>
         </entry>
