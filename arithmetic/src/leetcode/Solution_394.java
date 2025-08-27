@@ -8,8 +8,46 @@ import java.util.Stack;
 public class Solution_394 {
     public static void main(String[] args) {
         Solution_394 solution394 = new Solution_394();
-        String string = solution394.decodeString("20[abc]3[cd]ef");
+        String string = solution394.decodeStringOpt("20[abc]3[cd]ef");
         System.out.println(string);
+    }
+
+    public String decodeStringOpt(String s) {
+        Stack<Character> stack = new Stack<>();
+
+        char[] chars = s.toCharArray();
+        for (char ch : chars) {
+            if (ch == ']') {
+                //字符串
+                StringBuilder sb = new StringBuilder();
+                while (stack.peek() != '[') {
+                    sb.insert(0, stack.pop());
+                }
+                //推出括号
+                stack.pop();
+                //前缀数据
+                int num = 0;
+                int index = 0;
+                while (!stack.isEmpty() && stack.peek() >= '0' && stack.peek() <= '9') {
+                    num += (stack.pop() - '0') * Math.pow(10, index);
+                    index++;
+                }
+                //重新入栈
+                char[] chs = sb.toString().toCharArray();
+                for (int i = 0; i < num; i++) {
+                    for (char c : chs) {
+                        stack.push(c);
+                    }
+                }
+            } else {
+                stack.push(ch);
+            }
+        }
+        StringBuilder sb = new StringBuilder();
+        while (!stack.isEmpty()) {
+            sb.insert(0, stack.pop());
+        }
+        return sb.toString();
     }
 
     public String decodeString(String s) {
