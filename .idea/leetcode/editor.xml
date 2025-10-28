@@ -795,6 +795,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[3354]使数组元素等于零.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/doc/content/[3354]使数组元素等于零.md" />
+              <option name="frontendQuestionId" value="leetcode.cn3354" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[3354]使数组元素等于零.java" />
+              <option name="titleSlug" value="make-array-elements-equal-to-zero" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../simple-java/leetcode/editor/cn/[3362]零数组变换 III.java">
           <value>
             <LeetcodeEditor>
