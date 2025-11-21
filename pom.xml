@@ -13,6 +13,7 @@
         <module>zk</module>
         <module>daily-practice</module>
         <module>task-dispatcher</module>
+        <module>flink-study</module>
     </modules>
 
     <properties>

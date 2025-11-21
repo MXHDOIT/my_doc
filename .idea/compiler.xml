@@ -9,6 +9,7 @@
         <module name="daily-practice" />
         <module name="task-dispatcher" />
         <module name="zk" />
+        <module name="flink-study" />
         <module name="spring-ioc" />
       </profile>
     </annotationProcessing>
